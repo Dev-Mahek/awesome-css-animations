@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  background-color: black;
+}
+
+#page1,
+#page2,
+#page3 {
+  height: 100vh;
+  width: 100%;
+}
+
+/*
+  Marquee container: holds multiple marquee rows and clips overflow
+  - background-color provides the accent band color
+  - overflow hidden ensures rows slide within the band
+*/
+#move {
+  background-color: rgb(255, 85, 18);
+  display: flex;
+  padding: 3vw 0;
+  overflow: hidden;
+}
+
+/* Typography for the marquee text */
+#marque h1 {
+  font-size: 50px;
+}
+
+/*
+  Single marquee row: horizontally laid out text + arrow
+  - transform: translateX(-100%) sets initial off-screen position to the left
+    so it can scroll into view when animated by GSAP
+*/
+#marque {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+  flex-shrink: 0;
+  /* background-color: white; */
+  transform: translateX(-100%);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+  Project: GSAP Marquee Scroll Animation
+  Description: A simple page demonstrating a horizontally scrolling marquee
+               that reacts to mouse wheel events using GSAP.
+  Note: Multiple elements share the same id "marque" for demo simplicity.
+        In production, prefer using a class (e.g., class="marque").
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Page 1: empty section reserved for future content -->
+    <div id="page1"></div>
+    <!-- Page 2: marquee section that will translate horizontally -->
+    <div id="page2">
+      <!-- Container that clips and holds multiple marque rows -->
+      <div id="move">
+        <!-- Marquee row (duplicated for continuous scrolling effect) -->
+        <div id="marque">
+          <h1>THRIVE BEYOND LIMITS</h1>
+          <img
+            width="58"
+            height="58"
+            src="https://img.icons8.com/doodle/48/arrow--v1.png"
+            alt="arrow--v1"
+          />
+        </div>
+        <div id="marque">
+          <h1>THRIVE BEYOND LIMITS</h1>
+          <img
+            width="58"
+            height="58"
+            src="https://img.icons8.com/doodle/48/arrow--v1.png"
+            alt="arrow--v1"
+          />
+        </div>
+        <div id="marque">
+          <h1>THRIVE BEYOND LIMITS</h1>
+          <img
+            width="58"
+            height="58"
+            src="https://img.icons8.com/doodle/48/arrow--v1.png"
+            alt="arrow--v1"
+          />
+        </div>
+        <div id="marque">
+          <h1>THRIVE BEYOND LIMITS</h1>
+          <img
+            width="58"
+            height="58"
+            src="https://img.icons8.com/doodle/48/arrow--v1.png"
+            alt="arrow--v1"
+          />
+        </div>
+        <div id="marque">
+          <h1>THRIVE BEYOND LIMITS</h1>
+          <img
+            width="58"
+            height="58"
+            src="https://img.icons8.com/doodle/48/arrow--v1.png"
+            alt="arrow--v1"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="page3"></div>
+    <!-- GSAP Core Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Optional: ScrollTrigger plugin (not required for current marquee logic) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
