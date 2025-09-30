@@ -1,0 +1,104 @@
+/* ========== Base Reset & Typography ========== */
+/*
+  * Reset all elements to have no margin or padding
+  * Set font family to Stalinst One sans-serif
+  * Set font weight to 400 and font style to normal
+  * Set box sizing to border box
+*/
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-family: "Stalinist One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+/* Page takes full viewport size and uses light text on dark background */
+/*
+  * Set html and body to take up full viewport size
+  * Set color to white and background color to black
+*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+/* Center the main content both vertically and horizontally */
+/*
+  * Set main to take up full viewport size
+  * Set display to flex and justify content to center
+  * Set align items to center
+*/
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom cursor that follows the mouse (positioned via JS/GSAP) */
+/*
+  * Set cursor to have a height and width of 20px
+  * Set background color to white and border radius to 50%
+  * Set position to fixed and color to black
+  * Set font size to 5px and display to flex
+  * Set align items and justify content to center
+  * Set text align to center and z-index to 9
+*/
+#cursor {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  color: black;
+  font-size: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9;
+}
+
+/* Responsive image container. The overlay inside captures hover events. */
+/*
+  * Set image to have a height of 30vw and width of 70vw
+  * Set background color to red and position to relative
+*/
+#image {
+  height: 30vw;
+  width: 70vw;
+  background-color: red;
+  position: relative;
+}
+
+/* Ensure the image fully covers the container without distortion */
+/*
+  * Set image inside image container to have a height and width of 100%
+  * Set object fit to cover
+*/
+#image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Transparent overlay that sits above the image to improve hover detection */
+/*
+  * Set overlay to have a background color of transparent
+  * Set height and width to 100%
+  * Set position to absolute and z-index to 10
+*/
+#overlay {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
