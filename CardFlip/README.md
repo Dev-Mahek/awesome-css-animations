@@ -23,35 +23,6 @@ Perfect for portfolio cards, product displays, or any interactive UI element.
 
 ---
 
-## 📦 Installation & Setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/3d-flip-card.git
-cd 3d-flip-card
-```
-
-### 2. Install dependencies
-
-Make sure you have Node.js and npm/yarn installed.
-
-```bash
-npm install
-# or
-yarn install
-```
-
-### 3. Start the development server
-
-```bash
-npm start
-# or
-yarn start
-```
-
----
-
 ## 🧱 Code Overview
 
 Below is the complete component code:
@@ -129,4 +100,4 @@ export default App;
 
 ## 📜 License
 
-This project is licensed under the **MIT Li
+This project is licensed under the **MIT License — feel free to use and modify it.
