@@ -6,13 +6,6 @@ Perfect for portfolio cards, product displays, or any interactive UI element.
 
 ---
 
-## 🚀 Demo
-
-[https://github.com/yourusername/3d-flip-card/assets/demo-preview.gif](https://github.com/yourusername/3d-flip-card/assets/demo-preview.gif)
-*(Add your preview GIF or screenshot here)*
-
----
-
 ## 🧩 Features
 
 * 🎬 Smooth 3D flip animation using CSS transforms
